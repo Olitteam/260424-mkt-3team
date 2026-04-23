@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3팀 보고 자료</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root {
+  --bg:#f5f4f1;
+  --card:#ffffff;
+  --card2:#f2f1ee;
+  --border:rgba(0,0,0,0.08);
+  --border2:rgba(0,0,0,0.15);
+  --ink:#1a1a1a;
+  --ink2:#4a4a4a;
+  --ink3:#888888;
+  --purple:#7c3aed;
+}
+html{font-size:14px}
+body{font-family:'Pretendard',sans-serif;background:var(--bg);color:var(--ink);line-height:1.68}
+.hdr {
+  background: var(--ink);
+  padding: 32px 56px 28px;
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.hdr-tag {
+  font-size:11px; letter-spacing:.14em; color: rgba(255,255,255,0.35); text-transform:uppercase; margin-bottom:8px; font-weight:700;
+}
+.hdr-title {font-size:22px; font-weight:900; color:#fff; letter-spacing:-.02em;}
+.hdr-week {font-size:13px; font-weight:500; color:rgba(255,255,255,0.7); margin-bottom:4px; text-align:right}
+.wrap {max-width:1200px; margin:0 auto; padding:40px 48px 100px}
+.tree.level-0 {list-style:none; display:grid; grid-template-columns:repeat(12,1fr); gap:20px}
+.section-card {
+  list-style:none; grid-column:span 12; background:var(--card); border:1px solid var(--border);
+  border-radius:12px; overflow:hidden;
+}
+.section-card:nth-child(-n+3) {grid-column:span 4}
+.section-header {
+  padding:14px 18px; display:flex; align-items:center; gap:10px; background:var(--card2);
+  border-bottom:1px solid var(--border); font-size:18px; font-weight:800;
+}
+.tree.level-1 {list-style:none; padding:16px; display:grid; gap:12px}
+.subsection {
+  list-style:none; background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 16px;
+}
+.subsection-title {
+  font-size:13px; font-weight:800; margin-bottom:10px; color:var(--ink);
+  display:flex; align-items:center; gap:8px;
+}
+.subsection-title::before {
+  content:''; width:8px; height:8px; border-radius:50%; background:var(--purple);
+}
+.goal-simple {display:grid; gap:12px}
+.goal-box {
+  border:1px solid var(--border); border-radius:10px; padding:16px; background:#fafafa;
+}
+.goal-box-title {font-size:16px; font-weight:700; margin-bottom:10px; color:var(--ink)}
+.goal-row {padding:4px 0}
+.goal-line {font-size:14px; color:var(--ink2)}
+.goal-subrow {font-size:14px; color:var(--ink2); padding-left:12px; margin-top:4px}
+.tree.level-3,.tree.level-4,.tree.level-5,.tree.level-6,.tree.level-7,.tree.level-8 {list-style:none}
+.tree.level-3,.tree.level-4,.tree.level-5,.tree.level-6,.tree.level-7,.tree.level-8 {margin-left:16px}
+.item {list-style:none; padding:6px 0}
+.item-text {
+  position:relative; padding-left:16px; color:var(--ink2); line-height:1.75; font-size:14px; word-break:keep-all;
+}
+.item-text::before {
+  content:''; position:absolute; left:0; top:.9em; width:6px; height:6px; border-radius:50%; background:rgba(124,58,237,.42);
+}
+strong {
+  font-weight:800; color:var(--ink);
+  background:linear-gradient(180deg, transparent 35%, rgba(167,139,250,.24) 35%, rgba(167,139,250,.24) 100%);
+  padding:0 .12em;
+}
+.link-pill,.link-inline {color:#1d4ed8; text-decoration:none; font-weight:700}
+.link-pill {
+  display:inline-flex; align-items:center; gap:8px; padding:7px 11px; border-radius:999px;
+  background:#eff6ff; border:1px solid #dbeafe; margin:2px 4px 2px 0;
+}
+.link-pill::after {content:'↗'; font-size:12px}
+.link-inline {text-decoration:underline; text-underline-offset:3px}
+.divider {border:0; border-top:1px solid rgba(107,114,128,.35); margin:10px 0}
+@media (max-width:1180px) {
+  .section-card:nth-child(-n+3) {grid-column:span 12}
+}
+@media (max-width:768px) {
+  .hdr {padding:24px 18px; display:block}
+  .hdr-week {text-align:left; margin-top:12px}
+  .wrap {padding:20px 14px 48px}
+}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div>
+    <div class="hdr-tag">슬룸 마케팅 3팀 주간 보고</div>
+    <div class="hdr-title">3팀 공유 자료</div>
+  </div>
+  <div class="hdr-week">26-04-22</div>
+</div>
+<div class="wrap">
+  <ul class="tree level-0">
+    
+    <li class="section-card">
+      <div class="section-header">발편한케어</div>
+      <ul class="tree level-1">
+        <li class="subsection"><div class="subsection-title">목표</div><div class="goal-simple">
+        <div class="goal-box">
+          <div class="goal-box-title">종합</div>
+          <div class="goal-row"><div class="goal-line">목표 매출: 200,000,000원</div><div class="goal-subrow">현재: 86,892,742원 / 1일 평균 4,137,750원 <strong>(44%)</strong></div></div><div class="goal-row"><div class="goal-line">목표 공헌이익: 8% / 16,000,000원</div><div class="goal-subrow">현재: 10.7% / 9,272,870원</div></div><div class="goal-row"><div class="goal-line">구매율 1.8%</div></div>
+        </div>
+        <div class="goal-box">
+          <div class="goal-box-title">V1</div>
+          <div class="goal-row"><div class="goal-line">총매출:</div><div class="goal-subrow">63,691,995원 <strong>[기존 보고서]</strong></div><div class="goal-subrow">33,968,818원 <strong>[3팀 보고서]</strong></div></div><div class="goal-row"><div class="goal-line">공헌이익: -4% / -2,567,586원</div></div><div class="goal-row"><div class="goal-line">구매율: 1.09%</div></div>
+        </div>
+        <div class="goal-box">
+          <div class="goal-box-title">V2</div>
+          <div class="goal-row"><div class="goal-line">총매출: 23,200,746원 <strong>[기존 보고서]</strong>  / 70,673,844<strong>[3팀 보고서]</strong></div></div><div class="goal-row"><div class="goal-line">공헌이익: 54.4% / 12,626,913원</div></div><div class="goal-row"><div class="goal-line">구매율: 3.22%</div></div>
+        </div></div></li><li class="subsection"><div class="subsection-title">액션</div><ul class="tree level-3"><li class="item"><div class="item-text">광고 확대</div><ul class="tree level-4"><li class="item"><div class="item-text">디벨롭 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">질병 - 족저극막염 [현재 고통 - V2 / 예방 - V1]</div></li><li class="item"><div class="item-text">피로 회복 - 여행, 뷰티 [V2] / 붓기 [V1]</div></li><li class="item"><div class="item-text">신뢰도 - 전문의 [V2]</div></li></ul></li><li class="item"><div class="item-text">신규 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">차별화 - 데일리 아이템 [저자극, 효과 - V1]</div></li></ul></li><li class="item"><div class="item-text">사용 가능 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">영상: 약 70개 / 재 진행 40개 [다리라인 관련 좋음]</div></li><li class="item"><div class="item-text">이미지: 약 160개 / 정리중</div></li></ul></li></ul></li><li class="item"><div class="item-text">V1 판매 증대</div><ul class="tree level-4"><li class="item"><div class="item-text">V1 단독 페이지 운영</div></li><li class="item"><div class="item-text">V1+V2 페이지 개선 운영</div></li></ul></li></ul></li>
+      </ul>
+    </li>
+    
+    <li class="section-card">
+      <div class="section-header">허리편한케어</div>
+      <ul class="tree level-1">
+        <li class="subsection"><div class="subsection-title">목표</div><div class="goal-simple">
+        <div class="goal-box">
+          <div class="goal-box-title">종합</div>
+          <div class="goal-row"><div class="goal-line">목표매출: 230,000,000원</div><div class="goal-subrow">현재: 74,651,498원 / 1일 평균 3,554,833원<strong>(33%)</strong></div></div><div class="goal-row"><div class="goal-line">공헌이익 목표: 5% / 11,500,000원</div><div class="goal-subrow">현재 11% / -8,372,042원</div></div><div class="goal-row"><div class="goal-line">구매율: 1.4%</div></div>
+        </div>
+        <div class="goal-box">
+          <div class="goal-box-title">V1</div>
+          <div class="goal-row"><div class="goal-line">총매출: 18,492,390원</div></div><div class="goal-row"><div class="goal-line">공헌이익: -53.8% / -9,956,887원</div></div><div class="goal-row"><div class="goal-line">구매율: 0.77%</div></div>
+        </div>
+        <div class="goal-box">
+          <div class="goal-box-title">V2</div>
+          <div class="goal-row"><div class="goal-line">총매출:</div><div class="goal-subrow">56,159,108원 [기존 보고서]</div><div class="goal-subrow">224,685,377원 [3팀 보고서]</div></div><div class="goal-row"><div class="goal-line">공헌이익: 2.8% / 1,584,845원</div></div><div class="goal-row"><div class="goal-line">구매율: 2.09%</div></div>
+        </div></div></li><li class="subsection"><div class="subsection-title">액션</div><ul class="tree level-3"><li class="item"><div class="item-text">광고 감액</div><ul class="tree level-4"><li class="item"><div class="item-text">GFA, CRM 제거</div></li><li class="item"><div class="item-text">V1 감액 &gt; 매체 ROAS가 과도하게 좋은건 유지 &gt; 제품엔 안좋으나 자사에 좋은 광고</div></li></ul></li><li class="item"><div class="item-text">광고 확대</div><ul class="tree level-4"><li class="item"><div class="item-text">디벨롭 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">키성장 - V1 / 우선순위 아님 그냥 아이데이션임</div></li><li class="item"><div class="item-text"><strong>뷰티 - 허리 라인</strong></div></li><li class="item"><div class="item-text">질병 - 허리 통증</div></li></ul></li><li class="item"><div class="item-text">신규 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">차별화 - 시중 허리마사지기 비교 [가격, 성능]</div></li></ul></li><li class="item"><div class="item-text">사용 가능 콘텐츠</div><ul class="tree level-5"><li class="item"><div class="item-text">영상: 약 60개 / 재 진행 10개</div></li><li class="item"><div class="item-text">이미지: 약 140개 / 정리 중</div></li></ul></li></ul></li><li class="item"><div class="item-text">상세페이지 개선</div><ul class="tree level-4"><li class="item"><div class="item-text">V1 키성장</div></li><li class="item"><div class="item-text">V2 신규 아이데이션 &gt; 뷰티 [몸매, 라인 관리 특화]</div></li></ul></li></ul></li>
+      </ul>
+    </li>
+    
+    <li class="section-card">
+      <div class="section-header">골반마사지</div>
+      <ul class="tree level-1">
+        <li class="subsection"><div class="subsection-title">진행 상황</div><ul class="tree level-3"><li class="item"><div class="item-text">콘텐츠[4월 4주차]</div><ul class="tree level-4"><li class="item"><div class="item-text">영상 - 3건 완료 / 8건 예정</div></li><li class="item"><div class="item-text">이미지 - 5건 기획 완료 / 20건 예정</div></li><li class="item"><div class="item-text">브랜드 검색 [기획 전달 예정]</div><ul class="tree level-5"><li class="item"><div class="item-text">프로모션: 4월 20일 ~ 5월 26일 &gt; 5월 11일 - 서브이미지</div></li><li class="item"><div class="item-text">골반마사지기: 5월 27일 ~ &gt; 메인 이미지 / 서브 이미지</div></li></ul></li></ul></li><li class="item"><div class="item-text">전문의 관련</div><ul class="tree level-4"><li class="item"><div class="item-text">홍경진 원장 촬영 소스 - 5월 11일 [기획 및 촬영 확정 완료]</div></li><li class="item"><div class="item-text">산후관리 인물 섭외 - 바이럴 파트 진행</div></li><li class="item"><div class="item-text">산후 관리 컨셉 콘텐츠 촬영 - 5월 2주차 예정</div></li></ul></li></ul></li>
+      </ul>
+    </li>
+    
+    <li class="section-card">
+      <div class="section-header">기타 공유</div>
+      <ul class="tree level-1">
+        <li class="subsection"><div class="subsection-title"><strong>3팀 보드 및 공유 관련</strong></div><ul class="tree level-3"><li class="item"><div class="item-text"><a class="link-pill" href="https://w1653021649-nd0833612.slack.com/docs/T03FUKZ6JKH/F0ATZGS8JLF" target="_blank" rel="noopener noreferrer">슬랙 3팀 [3팀 공유 리스트]</a></div></li><li class="item"><div class="item-text"><a class="link-pill" href="https://docs.google.com/spreadsheets/d/1n_--yKeaDZ9gaRA0O2OKND6BHOynFPe8-f8mnrXQg70/edit?gid=101355792#gid=101355792" target="_blank" rel="noopener noreferrer">3팀 월 목표 및 계획</a></div></li><li class="item"><div class="item-text"><a class="link-pill" href="https://www.notion.so/33bd64378d48805fac11dfac1084329d?pvs=21" target="_blank" rel="noopener noreferrer">3팀 업무 계획표</a></div></li><li class="item"><div class="item-text"><a class="link-pill" href="https://docs.google.com/spreadsheets/d/1n_--yKeaDZ9gaRA0O2OKND6BHOynFPe8-f8mnrXQg70/edit?gid=101355792#gid=101355792" target="_blank" rel="noopener noreferrer">3팀 업무 디테일 리스트</a></div></li><li class="item"><div class="item-text"><a class="link-pill" href="https://docs.google.com/spreadsheets/d/11B94_cw6yLgK4y5vgJSX56Jb9pp6duHbUjNF_7ZF4Uw/edit?gid=349968196#gid=349968196" target="_blank" rel="noopener noreferrer">3팀 담당 제품 콘텐츠 관련</a></div></li></ul></li><li class="subsection"><div class="subsection-title"><strong>콘텐츠 방향</strong></div><ul class="tree level-3"><li class="item"><div class="item-text">신규:</div><ul class="tree level-4"><li class="item"><div class="item-text">소구포인트 정리</div></li><li class="item"><div class="item-text">이미지[메인 소구,키워드,분위기]</div></li><li class="item"><div class="item-text">영상 콘텐츠 [이미지 콘텐츠 성과 기준] / 신제품 및 리소스에 따라 변동</div></li></ul></li><li class="item"><div class="item-text">디벨롭:</div><ul class="tree level-4"><li class="item"><div class="item-text">기존: 메인, 서브 단 2가지로만 구분 [기존 제작에 제작 의도를 파악하기 어려움]</div></li><li class="item"><div class="item-text">1차 기획: 퍼포먼스 마케터 &gt; ‘소구포인트’, ‘키워드’, ‘소스’ , ‘스타일’</div></li><li class="item"><div class="item-text">2차 기획: 콘텐츠 마케터 &gt; ‘1차 기획’ 조합 후 장소, 인물, 스토리, 효과 디테일 위주</div></li></ul></li></ul></li><li class="subsection"><div class="subsection-title">협업 상황</div><ul class="tree level-3"><li class="item"><div class="item-text">2팀 - <strong>영상 콘텐츠 스케쥴 논의 예정</strong></div></li><li class="item"><div class="item-text">BM - 발편케, 허편케 제작 논의 완 / <strong>BM팀 소구포인트</strong> 선택 우선 &gt; 이후 3팀 해당 소구제외 진행</div></li></ul></li><li class="subsection"><div class="subsection-title">마케팅 3팀 기타 진행 방향</div><ul class="tree level-3"><li class="item"><div class="item-text">페이지별 광고비를 별도 구분</div><ul class="tree level-4"><li class="item"><div class="item-text">EX&gt; 발편한케어V2_100_질병_[ROAS_2025재활용_제작_김보람]_260420</div></li></ul></li><li class="item"><div class="item-text">클라리티 - 설치완 / 정상 작동 대기중 &gt; 상세페이지 분석 전달 예정</div></li></ul></li>
+      </ul>
+    </li>
+    
+    <li class="section-card">
+      <div class="section-header">애로 사항</div>
+      <ul class="tree level-1">
+        <li class="subsection"><div class="subsection-title">애로 사항1</div><ul class="tree level-3"><li class="item"><div class="item-text"><strong>회의나 논의한 내용을 관련자들에게 공지[도장 찍기]를 하면 좋겠다</strong></div><ul class="tree level-4"><li class="item"><div class="item-text">상황: 관련자/팔로우업 하는 사람만 알고 까먹거나 기억이 다르다</div><ul class="tree level-5"><li class="item"><div class="item-text">EX&gt; 가격 관련 &gt; 정리 되었다 / 얼라인 되었습니다</div><ul class="tree level-6"><li class="item"><div class="item-text">정리된 내용이 필요</div></li><li class="item"><div class="item-text">EX&gt; 129,000원으로 자사몰, 스스 ~04/27 / 04/28~ 109,000원 변경</div></li></ul></li></ul></li><li class="item"><div class="item-text">예시: 마케팅 3팀이 컨트롤 타워를 하고 다른팀에 협조를 얻겠다</div><ul class="tree level-5"><li class="item"><div class="item-text">EX&gt; BM, 2팀, D2C팀, MD허브 각각 논의</div><ul class="tree level-6"><li class="item"><div class="item-text">2팀 - 골반마사지기 촬영 + 팀 방 초대, 이전 스케쥴 공유 + 이후 3팀과 논의 후 리소스 배분</div></li><li class="item"><div class="item-text">BM팀 - 발편한케어 5월까지 캠페인[BM팀] 설정된 캠페인 BM팀이 변경 + 홍경진 원장님 소스 정리 + 발편한케어, 허리편한케어 BM 진행 하려는 포인트 3팀 사전 공유</div></li><li class="item"><div class="item-text">MD허브 - 광고 권한 이관 + 입점만 시도</div></li><li class="item"><div class="item-text">D2C팀 - 상세페이지 개선안 논의 후 진행하기</div></li></ul></li></ul></li></ul></li></ul></li><li class="subsection"><div class="subsection-title">애로 사항2</div><ul class="tree level-3"><li class="item"><div class="item-text">목표 수치와 수치의 신뢰도 관련</div><ul class="tree level-4"><li class="item"><div class="item-text">현재 시트의 <strong>“공헌이익률”</strong>이 마케팅팀 목표가 되는게 맞는지?</div><ul class="tree level-5"><li class="item"><div class="item-text">CRM, 반품, 취소, 물류, 원가 &gt; <strong>기타 비용</strong></div></li><li class="item"><div class="item-text">마케팅과 매출 &gt; <strong>ROAS = 구매율 + CTR</strong></div></li></ul></li><li class="item"><div class="item-text">데이터가 신빙성이 없는게 가장 크고</div><ul class="tree level-5"><li class="item"><div class="item-text">제품별 의사 결정에 <a class="link-inline" href="https://docs.google.com/spreadsheets/d/1zpXZB5bAytjKFmmuJpCNbwySO1yL_YlNOgsvVaqz3Uk/edit?gid=603097582#gid=603097582" target="_blank" rel="noopener noreferrer">올릿 상세 매출 보고소 슬룸</a> 의 데이터가 오히려 잘못된 정보</div></li><li class="item"><div class="item-text">예시 1: <strong>V1 공헌이익만</strong> 개선 플레이가 어려운 현 상황</div><ul class="tree level-6"><li class="item"><div class="item-text">혼합 페이지</div><ul class="tree level-7"><li class="item"><div class="item-text">상황:</div><ul class="tree level-8"><li class="item"><div class="item-text">V1 성과 개선 &gt; V1 콘텐츠 제작 &gt; V1 광고비 상승</div><ul class="tree level-9"><li class="item"><div class="item-text">V1 매출 유지 OR 소폭 상승 / <strong>V2 매출&amp;성과 상승</strong></div></li></ul></li></ul></li><li class="item"><div class="item-text"><strong>V1,V2 판매 페이지</strong> &gt; 해당 페이지 V1 구매율 1% / V2 구매율 3%</div></li><li class="item"><div class="item-text">결론: <strong>V1 성과 하락, V2 성과 상승</strong></div><ul class="tree level-8"><li class="item"><div class="item-text">해당 지표는 액션의 근거로 사용되기 어려움</div></li><li class="item"><div class="item-text"><strong>현재 [발편한케어]</strong> 상황에는 [V1 별도 공헌이익]은 맞지 않는 목표 수치</div></li></ul></li></ul></li><li class="item"><div class="item-text">혼합 캠페인</div><ul class="tree level-7"><li class="item"><div class="item-text"><strong>V1,V2 광고 혼용 운용</strong></div><ul class="tree level-8"><li class="item"><div class="item-text">랜딩이 2개인 캠페인 OR 세트 [예산 운용 관련]</div><ul class="tree level-9"><li class="item"><div class="item-text"><strong>V1 지출</strong>로 잡히고 <strong>V2 효율</strong>이 좋아짐</div></li><li class="item"><div class="item-text">V1 데이터 성과 체크 후 예산 중단 &gt; V2효율도 안 좋아짐</div></li></ul></li></ul></li></ul></li></ul></li><li class="item"><div class="item-text">예시 2: 허리편한케어</div><ul class="tree level-6"><li class="item"><div class="item-text"><a class="link-pill" href="https://docs.google.com/spreadsheets/d/1hFacjZb6r1qhsFMyTSucgF_Y9a5IdDxmgRLk9SXEAAU/edit?gid=867761659#gid=867761659" target="_blank" rel="noopener noreferrer">3월 가상 계산</a></div></li><li class="item"><div class="item-text">3월 기타 비용을 제외하고 보면 성과 좋음</div><ul class="tree level-7"><li class="item"><div class="item-text">GFA 1일 50만원 &gt; 스마트스토어 매출 근거</div></li><li class="item"><div class="item-text">CRM &gt; 1일 최고 비용 03/09 &gt; 225만원 / 당일 공헌 이익 - 119만원</div></li></ul></li><li class="item"><div class="item-text">4월에 진행된 액션들이 하지 않아도 되는 액션들이라 판단</div><ul class="tree level-7"><li class="item"><div class="item-text"><strong>허리편한케어 V1 페이지 개선</strong></div><ul class="tree level-8"><li class="item"><div class="item-text">1월, 3월 V1 페이지 구매율 2% 이상 / 2월 중단 사유 모름</div><ul class="tree level-9"><li class="item"><div class="item-text">V1 광고 흰색 콘텐츠 280개 / 파란색 콘텐츠(PA) 7개</div></li></ul></li><li class="item"><div class="item-text">4월 6일 V1 페이지 변경 후 구매율 0.68%</div></li></ul></li></ul></li></ul></li></ul></li><li class="item"><div class="item-text">결론</div><ul class="tree level-5"><li class="item"><div class="item-text">발편한케어 V2 판매 촉진</div><ul class="tree level-6"><li class="item"><div class="item-text">상황: V2를 더 사게하는 구조</div></li><li class="item"><div class="item-text">해결안: V1 단독 페이지 or V1+V2 페이지 개선 전까지 V2 집중</div></li></ul></li><li class="item"><div class="item-text">허리편한케어 V1 자사몰 개선 리소스 중단</div><ul class="tree level-6"><li class="item"><div class="item-text">상황: [리소스는 신제품과 유사 + 여러 이슈 + 좋은 지표 부재]</div></li><li class="item"><div class="item-text">1. 파란색 제품으로 촬영부터 필요 [광고 콘텐츠 부재] / 발편한케어와 상황 다름</div></li><li class="item"><div class="item-text">2. 과거 59,900원 검색 &gt; 현 79,900원 구매 가능[쿠팡 수수료 10% 이상]</div></li><li class="item"><div class="item-text">3. 현 자사몰 V1(129,000원) &gt; V2(129,000원)</div></li><li class="item"><div class="item-text">4. 구매율 및 장바구니 수치 / 여러 변경과 과거 성과 액션 소멸로 처음부터 시작</div></li><li class="item"><hr class="divider"></li><li class="item"><div class="item-text">해결안: 외부몰에서 판매 되는 중/수량은 적음 &gt; 쿠팡, SS만 확인</div></li></ul></li></ul></li></ul></li></ul></li><li class="subsection"><div class="subsection-title">애로 사항3[해결]</div><ul class="tree level-3"><li class="item"><div class="item-text"><strong>브랜드 내에 같은 기준과 목표로 공통된 방향으로 가는지?</strong></div><ul class="tree level-4"><li class="item"><div class="item-text">예시 명제: 허리편한케어 V1, V2 판매 증진 &gt; <strong>V1 판매가 더 중요</strong>하다</div><ul class="tree level-5"><li class="item"><div class="item-text">마케팅 3팀 - <strong>콘텐츠 개선</strong></div><ul class="tree level-6"><li class="item"><div class="item-text">V1 파란색 콘텐츠 없음(총 V1 콘텐츠 300개중, 파란색 V1은 PA광고 7개)</div></li></ul></li><li class="item"><div class="item-text">MD허브팀 - <strong>외부몰 최저가 판매</strong></div><ul class="tree level-6"><li class="item"><div class="item-text">자사몰 129,000원 VS 쿠팡 79,000원</div></li><li class="item"><div class="item-text">자사몰 129,000원 VS 스마트스토어 109,000원 + 네이버 광고 진행</div></li></ul></li><li class="item"><div class="item-text">D2C팀 - <strong>프로모션</strong></div><ul class="tree level-6"><li class="item"><div class="item-text">V1[129,000원]은 4월 27일 프로모션, 번들 X</div></li><li class="item"><div class="item-text">V2[129,000원]는 프로모션 상단, 번들 구성 10가지</div></li></ul></li><li class="item"><div class="item-text">BM팀 - <strong>공구</strong> + 콘텐츠 개선</div><ul class="tree level-6"><li class="item"><div class="item-text">V2+코어요추벨트[119,900원]</div></li></ul></li></ul></li><li class="item"><div class="item-text">마케팅 3팀 상황 판단</div><ul class="tree level-5"><li class="item"><div class="item-text">마케팅 3팀 제외 / 허리편한케어 V2에 집중으로 확인</div></li><li class="item"><div class="item-text"><strong>‘가격’</strong>이 성과의 전부는 아니나 <strong>‘자사몰 상시 판매가’</strong>가 매력이 없다면 광고 성과도 안 좋을 확률이 높다</div><ul class="tree level-6"><li class="item"><div class="item-text">광고 성과 개선[세팅, 콘텐츠]에 들어가는 애너지에 비해 임팩트가 낮을 확률이 높다</div></li></ul></li></ul></li><li class="item"><div class="item-text">결론</div><ul class="tree level-5"><li class="item"><div class="item-text">메인 판매처 및 가격 정리 필요</div><ul class="tree level-6"><li class="item"><div class="item-text">광고 개선으로 % 개선을 필요하다 판단하는지</div><ul class="tree level-7"><li class="item"><div class="item-text">EX&gt; 광고 개선으로 80%를 해결하겠다, 외부몰 및 기타에서는 20%만 해결</div><ul class="tree level-8"><li class="item"><div class="item-text">자사몰 위주의 플레이</div><ul class="tree level-9"><li class="item"><div class="item-text">페이지 개선 [내용, 가격, UI, 리뷰 등등]</div></li><li class="item"><div class="item-text">광고 세팅 [채널 다각화, 광고비 운영 효율화]</div></li><li class="item"><div class="item-text">광고 콘텐츠 개선 [추가 촬영, 편집]</div></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li>
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+</body>
+</html>
